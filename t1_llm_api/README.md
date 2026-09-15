@@ -21,17 +21,17 @@ libraries we commonly use.
 3. Open [base_client](base_client.py) and review it — this is the abstract base class all AI clients extend
 
 ### OpenAI Chat Completions
-4. Open [openai/base](openai/base.py) and implement TODO — validate api_key and call super with Bearer-formatted key
-5. Open [openai/chat/completions/client.py](openai/chat/completions/client.py) and implement all TODOs (SDK client)
-6. Run [openai_chat_completions_app.py](openai/chat/completions/openai_chat_completions_app.py) with `openai_client` and test
-7. Open [openai/chat/completions/custom_client.py](openai/chat/completions/custom_client.py) and implement all TODOs (raw HTTP client)
-8. In [openai_chat_completions_app.py](openai/chat/completions/openai_chat_completions_app.py) switch to `openai_custom_client` and test
+4. Open [openai/base](openai_examples/base.py) and implement TODO — validate api_key and call super with Bearer-formatted key
+5. Open [openai/chat/completions/client.py](openai_examples/chat/completions/client.py) and implement all TODOs (SDK client)
+6. Run [openai_chat_completions_app.py](openai_examples/chat/completions/openai_chat_completions_app.py) with `openai_client` and test
+7. Open [openai/chat/completions/custom_client.py](openai_examples/chat/completions/custom_client.py) and implement all TODOs (raw HTTP client)
+8. In [openai_chat_completions_app.py](openai_examples/chat/completions/openai_chat_completions_app.py) switch to `openai_custom_client` and test
 
 ### OpenAI Responses API
-9. Open [openai/responses/client.py](openai/responses/client.py) and implement all TODOs (SDK client)
-10. Run [openai_responses_app.py](openai/responses/openai_responses_app.py) with `openai_client` and test
-11. Open [openai/responses/custom_client.py](openai/responses/custom_client.py) and implement all TODOs (raw HTTP client)
-12. In [openai_responses_app.py](openai/responses/openai_responses_app.py) switch to `openai_custom_client` and test
+9. Open [openai/responses/client.py](openai_examples/responses/client.py) and implement all TODOs (SDK client)
+10. Run [openai_responses_app.py](openai_examples/responses/openai_responses_app.py) with `openai_client` and test
+11. Open [openai/responses/custom_client.py](openai_examples/responses/custom_client.py) and implement all TODOs (raw HTTP client)
+12. In [openai_responses_app.py](openai_examples/responses/openai_responses_app.py) switch to `openai_custom_client` and test
 
 ### Anthropic
 13. Open [anthropic/client.py](anthropic/client.py) and implement all TODOs (SDK client)

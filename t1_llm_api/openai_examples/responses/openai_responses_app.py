@@ -2,8 +2,8 @@ import asyncio
 
 from t1_llm_api.base_app import start
 from commons.constants import OPENAI_RESPONSES_ENDPOINT, OPENAI_API_KEY, DEFAULT_SYSTEM_PROMPT
-from t1_llm_api.openai.responses.client import OpenAIResponsesClient
-from t1_llm_api.openai.responses.custom_client import CustomOpenAIResponsesClient
+from t1_llm_api.openai_examples.responses.client import OpenAIResponsesClient
+from t1_llm_api.openai_examples.responses.custom_client import CustomOpenAIResponsesClient
 
 openai_client = OpenAIResponsesClient(
     endpoint=OPENAI_RESPONSES_ENDPOINT,
@@ -19,5 +19,5 @@ openai_custom_client = CustomOpenAIResponsesClient(
 )
 
 asyncio.run(
-    start(True, openai_client)
+    start(True, openai_custom_client)
 )

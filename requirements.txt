@@ -21,3 +21,4 @@ presidio_anonymizer==2.2.360
 pydantic==2.12.5
 pyyaml>=6.0
 python-jose==3.5.0
+python-dotenv
