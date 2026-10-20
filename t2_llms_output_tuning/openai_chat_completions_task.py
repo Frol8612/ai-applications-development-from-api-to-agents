@@ -56,9 +56,9 @@ from t2_llms_output_tuning._main import run
 #  Try: reasoning_effort="low" vs reasoning_effort="high"
 
 run(
-    client=OpenAIChatCompletionsClient(model_name='gpt-5.2'),
+    client=OpenAIChatCompletionsClient(model_name='gpt-4.1-mini'),
     print_request=True, # Switch to False if you do not want to see the request in console
     print_only_content=False, # Switch to True if you want to see only content from response
 
-
+    max_tokens=50
 )

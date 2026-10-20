@@ -20,7 +20,11 @@ DEFAULT_SYSTEM_PROMPT = "You are an assistant who answers concisely and informat
 # OPENAI_HOST = "https://api.openai.com"
 # OPENAI_CHAT_COMPLETIONS_ENDPOINT = f"{OPENAI_HOST}/v1/chat/completions"
 OPENAI_HOST = "https://ai-proxy.lab.epam.com"
-OPENAI_CHAT_COMPLETIONS_ENDPOINT = f"{OPENAI_HOST}/openai/deployments/gpt-4.1-mini-2025-04-14"
+# OPENAI_CHAT_COMPLETIONS_ENDPOINT = f"{OPENAI_HOST}/openai/deployments/gpt-4.1-mini-2025-04-14"
+OPENAI_CHAT_COMPLETIONS_ENDPOINT = (
+    f"{OPENAI_HOST}/openai/deployments/"
+    "gpt-4.1-mini-2025-04-14/chat/completions"
+)
 OPENAI_RESPONSES_ENDPOINT = f"{OPENAI_HOST}/openai/deployments/gpt-4.1-mini-2025-04-14"
 OPENAI_EMBEDDINGS_ENDPOINT = f"{OPENAI_HOST}/v1/embeddings"
 OPENAI_API_KEY = os.getenv('DIAL_KEY', '')
