@@ -28,6 +28,14 @@ OPENAI_CHAT_COMPLETIONS_ENDPOINT = (
 OPENAI_RESPONSES_ENDPOINT = f"{OPENAI_HOST}/openai/deployments/gpt-4.1-mini-2025-04-14"
 OPENAI_EMBEDDINGS_ENDPOINT = f"{OPENAI_HOST}/v1/embeddings"
 OPENAI_API_KEY = os.getenv('DIAL_KEY', '')
+OPENAI_TERRA_MODEL = "gpt-5.6-terra-2026-07-09"
+OPENAI_EMBEDDINGS_MODEL = "text-embedding-3-small-1"
+OPENAI_EMBEDDING_ENDPOINT = (
+    f"{OPENAI_HOST}/openai/deployments/{OPENAI_EMBEDDINGS_MODEL}"
+)
+OPENAI_CHAT_EMBEDDING_ENDPOINT = (
+    f"{OPENAI_HOST}/openai/deployments/{OPENAI_TERRA_MODEL}"
+)
 
 # Anthropic API configuration
 ANTHROPIC_ENDPOINT = "https://api.anthropic.com/v1/messages"
